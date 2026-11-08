@@ -2,7 +2,7 @@ import { Heart, Users, Shield, ArrowRight } from "lucide-react";
 
 export default function BenefitsGrid() {
   return (
-    <section id="benefits" className="py-24 px-5">
+    <section id="missao" className="py-24 px-5">
       <div className="max-w-[72rem] mx-auto">
         <div className="mb-16 text-center">
           <h2 className="mb-4 font-bold text-app-text text-3xl md:text-4xl max-w-2xl mx-auto">

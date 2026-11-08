@@ -1,4 +1,4 @@
-import { Sparkles, Heart, MessageSquare, Check } from "lucide-react";
+import { Sparkles, Mail, HelpCircle, Users, Star } from "lucide-react";
 
 function Subheading({ text }: { text: string }) {
   return (
@@ -13,86 +13,70 @@ function Subheading({ text }: { text: string }) {
 
 export default function HeroSection() {
   return (
-    <section className="pt-16 relative overflow-hidden">
-      <div className="max-w-[120rem] mx-auto relative">
+    <section id="hero" className="pt-16 relative overflow-hidden bg-app-bg">
+        <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(to_top,rgba(255,107,107,0.7)_0%,rgba(255,107,107,0.35)_15%,rgba(255,107,107,0.1)_30%,transparent_50%)]" />
+      <div className="max-w-[120rem] w-full mx-auto relative z-10 min-h-[calc(100vh-4rem)] flex items-center justify-center">
         <div className="wrapper">
           <div className="max-w-[800px] mx-auto">
             <div className="text-center pb-16">
               <Subheading text="Sua rede. Suas vibes." />
               <h1 className="text-app-text mx-auto font-bold mb-4 text-4xl sm:text-[50px] sm:leading-[64px] max-w-[740px]">
-                Curtida é vaidade. <span className="text-coral-500">Virtude é memória.</span>
+                Conexões reais com <span className="text-coral-500">pessoas que estão na mesma vibe</span>
               </h1>
               <p className="max-w-[580px] text-center mx-auto text-app-muted text-base">
-                Uma rede social onde você curte posts, mas também reconhece virtudes
-                em quem convive com você. Vibes permanentes. Depoimentos só entre
-                amigos mútuos. Moderação no seu aparelho.
+                Um lugar onde a afinidade aproxima, o respeito sustenta e o cuidado diário mantém o ambiente saudável, combatendo todo tipo de ódio.
               </p>
-              <div className="mt-9 flex sm:flex-row flex-col gap-3 relative z-30 items-center justify-center">
-                <button
-                  disabled
-                  className="gradient-btn h-12 inline-flex items-center justify-center px-6 py-3 rounded-full text-sm font-medium cursor-not-allowed opacity-90"
-                >
-                  Em breve na Play Store
-                </button>
+              <div className="mt-9 flex relative z-30 items-center justify-center">
                 <a
-                  href="#features"
-                  className="h-12 inline-flex items-center gap-2 px-6 py-3 rounded-full text-sm border border-app-border bg-app-surface text-app-text hover:bg-app-soft transition"
+                  href="https://whatsapp.com/channel/PLACEHOLDER"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-5 rounded-2xl border border-coral-500/70 bg-coral-500/20 pl-3.5 pr-[30px] py-3.5 text-app-text transition-colors hover:border-coral-500/40 hover:bg-coral-500/[0.12]"
                 >
-                  Ver como funciona
+                  <span className="flex h-[68px] w-[68px] flex-shrink-0 items-center justify-center rounded-[14px] bg-coral-500 text-white">
+                    <svg width="36" height="36" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                  </span>
+                  <span className="flex flex-col text-left leading-[1.15]">
+                    <span className="text-[26px] font-bold tracking-[-0.02em]">Quero entrar na vibe</span>
+                    <span className="mt-1.5 text-[13px] opacity-70">Entre no canal e acompanhe o lançamento</span>
+                  </span>
                 </a>
               </div>
             </div>
+              
           </div>
 
-          <div className="max-w-[360px] mx-auto relative">
-            <div className="phone-frame rounded-[44px] p-2 relative z-30">
-              <div className="bg-app-bg rounded-[36px] aspect-[9/19] p-4 flex flex-col overflow-hidden">
-                <div className="h-6 w-24 bg-black rounded-full mx-auto mb-4" />
-                <div className="flex items-center justify-between mb-4">
-                  <div className="flex items-center gap-2">
-                    <div className="w-9 h-9 rounded-full bg-coral-500/20 border border-coral-500/30 flex items-center justify-center">
-                      <Heart className="w-3.5 h-3.5 text-coral-500" fill="currentColor" />
-                    </div>
-                    <div>
-                      <div className="text-[10px] text-app-text font-semibold">@sophie</div>
-                      <div className="text-[8px] text-app-muted">vibe: música</div>
-                    </div>
-                  </div>
-                  <MessageSquare className="w-4 h-4 text-app-muted" />
-                </div>
-                <div className="space-y-2.5 flex-1">
-                  <div className="bg-app-surface rounded-2xl p-3 border border-app-border">
-                    <div className="flex items-center gap-1.5 mb-1.5">
-                      <span className="text-[9px] bg-coral-500/15 text-coral-500 px-1.5 py-0.5 rounded-full">bondosa</span>
-                      <span className="text-[9px] bg-gold-500/15 text-gold-500 px-1.5 py-0.5 rounded-full">criativa</span>
-                    </div>
-                    <p className="text-[10px] text-app-text leading-relaxed">Hoje a tarde foi boa demais. Fazia tempo que não ria assim.</p>
-                    <div className="flex items-center gap-3 mt-2 text-[9px] text-app-muted">
-                      <span className="flex items-center gap-0.5"><Heart className="w-2.5 h-2.5" /> 12 curtidas</span>
-                      <span>3 virtudes</span>
-                    </div>
-                  </div>
-                  <div className="bg-app-surface rounded-2xl p-3 border border-app-border">
-                    <div className="flex items-center gap-1.5 mb-1.5">
-                      <span className="text-[9px] bg-green-500/15 text-green-500 px-1.5 py-0.5 rounded-full">inteligente</span>
-                    </div>
-                    <p className="text-[10px] text-app-text leading-relaxed">Alguém que eu confio disse que eu tô no caminho certo.</p>
-                    <div className="flex items-center gap-3 mt-2 text-[9px] text-app-muted">
-                      <span className="flex items-center gap-0.5"><Heart className="w-2.5 h-2.5" /> 5 curtidas</span>
-                      <span>1 virtude</span>
-                    </div>
-                  </div>
-                </div>
-                <div className="mt-4 bg-coral-500/10 border border-coral-500/20 rounded-full px-3 py-2 flex items-center justify-between">
-                  <span className="text-[9px] text-coral-500">Virtudes que recebeu no perfil</span>
-                  <Check className="w-3 h-3 text-coral-500" />
-                </div>
-              </div>
+        </div>
+        <div className="pointer-events-none max-[1100px]:hidden">
+          <div className="absolute top-14 left-16 floating-1">
+            <div className="relative inline-flex items-center gap-2 rounded-2xl border border-coral-500/30 bg-app-surface/90 px-4 py-2.5">
+              <Mail className="h-4 w-4 text-coral-500" />
+              <span className="text-sm font-medium text-app-text">Envie depoimentos</span>
+              <svg viewBox="0 0 24 24" className="absolute h-4 w-4 text-coral-500/70 -bottom-3 -right-4 rotate-[90deg]" fill="currentColor" aria-hidden="true"><path fillRule="evenodd" clipRule="evenodd" d="M20.8103 5.94919C21.5951 4.19841 19.8016 2.40485 18.0508 3.18969L3.64527 9.64735C1.52435 10.5981 1.43336 13.5756 3.49228 14.6541L6.508 16.2337C7.04568 16.5154 7.48464 16.9543 7.76628 17.492L9.34594 20.5077C10.4244 22.5666 13.4019 22.4757 14.3527 20.3547L20.8103 5.94919Z"/></svg>
             </div>
-            <div className="absolute -top-20 left-1/2 -translate-x-1/2 w-[600px] h-[600px] rounded-full bg-coral-500/20 blur-[120px] pointer-events-none z-10" />
+          </div>
+          <div className="absolute left-[145px] top-[368px] floating-2 max-[1240px]:left-[80px]">
+            <div className="relative inline-flex items-center gap-2 rounded-2xl border border-coral-500/30 bg-app-surface/90 px-4 py-2.5">
+              <HelpCircle className="h-4 w-4 text-coral-500" />
+              <span className="text-sm font-medium text-app-text">Faça perguntas</span>
+              <svg viewBox="0 0 24 24" className="absolute h-4 w-4 text-coral-500/70 -top-3 -right-4 rotate-0" fill="currentColor" aria-hidden="true"><path fillRule="evenodd" clipRule="evenodd" d="M20.8103 5.94919C21.5951 4.19841 19.8016 2.40485 18.0508 3.18969L3.64527 9.64735C1.52435 10.5981 1.43336 13.5756 3.49228 14.6541L6.508 16.2337C7.04568 16.5154 7.48464 16.9543 7.76628 17.492L9.34594 20.5077C10.4244 22.5666 13.4019 22.4757 14.3527 20.3547L20.8103 5.94919Z"/></svg>
+            </div>
+          </div>
+          <div className="absolute right-16 top-[108px] floating-3">
+            <div className="relative inline-flex items-center gap-2 rounded-2xl border border-coral-500/30 bg-app-surface/90 px-4 py-2.5">
+              <Users className="h-4 w-4 text-coral-500" />
+              <span className="text-sm font-medium text-app-text">Entre em clubes</span>
+              <svg viewBox="0 0 24 24" className="absolute h-4 w-4 text-coral-500/70 -bottom-3 -left-4 -scale-x-100 -rotate-[90deg]" fill="currentColor" aria-hidden="true"><path fillRule="evenodd" clipRule="evenodd" d="M20.8103 5.94919C21.5951 4.19841 19.8016 2.40485 18.0508 3.18969L3.64527 9.64735C1.52435 10.5981 1.43336 13.5756 3.49228 14.6541L6.508 16.2337C7.04568 16.5154 7.48464 16.9543 7.76628 17.492L9.34594 20.5077C10.4244 22.5666 13.4019 22.4757 14.3527 20.3547L20.8103 5.94919Z"/></svg>
+            </div>
+          </div>
+          <div className="absolute top-[386px] right-[200px] floating-4 max-[1240px]:right-[80px] max-[1350px]:right-[150px] max-[1500px]:right-[200px]">
+            <div className="relative inline-flex items-center gap-2 rounded-2xl border border-coral-500/30 bg-app-surface/90 px-4 py-2.5">
+              <Star className="h-4 w-4 text-coral-500" />
+              <span className="text-sm font-medium text-app-text">Envie votos</span>
+              <svg viewBox="0 0 24 24" className="absolute h-4 w-4 text-coral-500/70 -top-3 -left-4 -scale-x-100 rotate-0" fill="currentColor" aria-hidden="true"><path fillRule="evenodd" clipRule="evenodd" d="M20.8103 5.94919C21.5951 4.19841 19.8016 2.40485 18.0508 3.18969L3.64527 9.64735C1.52435 10.5981 1.43336 13.5756 3.49228 14.6541L6.508 16.2337C7.04568 16.5154 7.48464 16.9543 7.76628 17.492L9.34594 20.5077C10.4244 22.5666 13.4019 22.4757 14.3527 20.3547L20.8103 5.94919Z"/></svg>
+            </div>
           </div>
         </div>
-        <div className="hero-glow-bg pointer-events-none w-full h-64 absolute z-10 bottom-0" />
       </div>
     </section>
   );
