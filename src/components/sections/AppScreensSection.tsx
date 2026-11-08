@@ -58,7 +58,7 @@ export default function AppScreensSection() {
         const wrapMax = i12.offsetLeft - el.clientWidth / 2 + PHONE_W / 2;
         if (el.scrollLeft < wrapMin) el.scrollLeft += WRAP;
         else if (el.scrollLeft >= wrapMax) el.scrollLeft -= WRAP;
-      }, 300);
+      }, 100);
     };
 
     el.addEventListener("scroll", onScroll, { passive: true });
@@ -122,6 +122,7 @@ export default function AppScreensSection() {
           msOverflowStyle: "none",
           perspective: "1400px",
           perspectiveOrigin: "center center",
+          scrollSnapType: "x mandatory",
         }}
       >
         <div
@@ -135,7 +136,7 @@ export default function AppScreensSection() {
               type="button"
               onMouseDown={(e) => e.preventDefault()}
               onClick={() => setLightboxIndex(i % SCREENS.length)}
-              className="coverflow-item shrink-0 relative focus:outline-none"
+              className="coverflow-item shrink-0 relative focus:outline-none snap-center"
               style={{ width: PHONE_W, willChange: "transform" }}
             >
               <div className="phone-frame rounded-[36px] p-2">

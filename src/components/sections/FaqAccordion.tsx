@@ -32,7 +32,7 @@ export default function FaqAccordion() {
   const [active, setActive] = useState<number | null>(0);
   return (
     <section id="faq" className="py-24 px-5">
-      <div className="wrapper max-w-[720px] mx-auto">
+      <div className="max-w-[720px] mx-auto">
         <div className="mb-12 text-center">
           <h2 className="mb-3 font-bold text-app-text text-3xl md:text-4xl">Dúvidas frequentes</h2>
           <p className="max-w-md mx-auto leading-6 text-app-muted">
