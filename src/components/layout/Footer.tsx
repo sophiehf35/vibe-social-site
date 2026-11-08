@@ -10,11 +10,7 @@ export default function Footer() {
           </span>
           Vibe Social
         </div>
-        <div className="flex items-center gap-6 text-sm text-app-muted">
-          <a href="#features" className="hover:text-app-text transition">Diferenciais</a>
-          <a href="#faq" className="hover:text-app-text transition">Dúvidas</a>
-          <span>© 2026 Vibe Social</span>
-        </div>
+        <span className="text-sm text-app-muted">© 2026 Vibe Social</span>
       </div>
     </footer>
   );
