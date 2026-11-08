@@ -1,0 +1,74 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
+
+@theme {
+  --font-sans: "Onest", ui-sans-serif, system-ui, -apple-system, sans-serif;
+
+  /* App dark mode (packages/mobile/src/theme.ts darkColors) */
+  --color-app-bg: #161210;
+  --color-app-surface: #221B17;
+  --color-app-soft: #2A211C;
+  --color-app-softer: #332821;
+  --color-app-text: #F4EDE6;
+  --color-app-muted: #9A8F86;
+  --color-app-border: #332A24;
+
+  /* Brand */
+  --color-coral-400: #FF8A8A;
+  --color-coral-500: #FF6B6B;
+  --color-coral-600: #E85555;
+  --color-coral-soft: #3A2424;
+  --color-gold-500: #FFC84A;
+  --color-green-500: #6BCB77;
+  --color-danger-500: #FF7070;
+
+  --text-title-lg: 44px;
+  --text-title-lg--line-height: 52px;
+}
+
+@layer base {
+  html, body { background: #161210; color: #F4EDE6; }
+  button:not(:disabled), [role="button"]:not(:disabled) { cursor: pointer; }
+}
+
+@utility wrapper { @apply container px-5 mx-auto sm:px-7; }
+
+.gradient-btn {
+  background-image: linear-gradient(97deg, #FF6B6B 0%, #FF8A8A 140.21%);
+  color: white; background-size: 200% auto;
+  background-position: 0% center;
+  transition: background-position 0.6s ease-in-out, transform 0.3s ease;
+}
+.gradient-btn:hover {
+  background-image: linear-gradient(97deg, #FF8A8A 0%, #FF6B6B 140.21%);
+  background-position: 100% center;
+}
+
+@utility hero-glow-bg {
+  background-image: radial-gradient(60% 60% at 50% 100%, rgba(255,107,107,0.20) 0%, transparent 70%);
+}
+
+.core-feature-icon {
+  background-image: linear-gradient(180deg, rgba(255,107,107,0.18) 0%, rgba(255,107,107,0) 100%);
+  width: 64px; height: 64px;
+  align-items: center; display: flex; justify-content: center;
+  border-radius: 20px;
+  border: 1px solid rgba(255,107,107,0.15);
+}
+
+@keyframes float-y { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
+@keyframes float-x { 0%,100% { transform: translateX(0); } 50% { transform: translateX(10px); } }
+@keyframes float-xy { 0%,100% { transform: translate(0,0); } 50% { transform: translate(10px,-10px); } }
+@keyframes float-rev { 0%,100% { transform: translateY(0); } 50% { transform: translateY(8px); } }
+.floating-1 { animation: float-y 3s ease-in-out infinite; }
+.floating-2 { animation: float-x 4s ease-in-out infinite; }
+.floating-3 { animation: float-xy 5s ease-in-out infinite; }
+.floating-4 { animation: float-rev 6s ease-in-out infinite; }
+
+/* Phone mockup */
+.phone-frame {
+  background: #221B17;
+  border: 2px solid #332A24;
+  box-shadow: 0 30px 80px -20px rgba(255,107,107,0.35), 0 20px 40px -20px rgba(0,0,0,0.8);
+}
