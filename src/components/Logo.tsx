@@ -1,5 +1,5 @@
-import logoLight from "../assets/logo-light.webp";
-import logoDark from "../assets/logo-dark.webp";
+import logoLight from "../assets/logo-dark.webp";
+import logoDark from "../assets/logo-light.webp";
 
 type LogoProps = { className?: string };
 
