@@ -3,7 +3,7 @@ import Footer from "./components/layout/Footer";
 import HeroSection from "./components/sections/HeroSection";
 import CoreFeatures from "./components/sections/CoreFeatures";
 import BenefitsGrid from "./components/sections/BenefitsGrid";
-import AppScreensSection from "./components/sections/AppScreensSection";
+// import AppScreensSection from "./components/sections/AppScreensSection";
 import FaqAccordion from "./components/sections/FaqAccordion";
 
 export default function App() {
@@ -13,7 +13,7 @@ export default function App() {
       <main className="isolate flex-1 flex flex-col">
         <HeroSection />
         <CoreFeatures />
-        <AppScreensSection />
+        {/* <AppScreensSection /> */}
         <BenefitsGrid />
         <FaqAccordion />
       </main>

@@ -21,10 +21,10 @@ export default function CoreFeatures() {
       <div className="max-w-[72rem] mx-auto">
         <div className="mb-16 text-center">
           <h2 className="mb-4 font-bold text-app-text text-3xl md:text-4xl max-w-2xl mx-auto">
-            Seis jeitos de estar na <span className="text-coral-500">vibe</span>
+            Confira algumas <span className="text-coral-500">funcões</span>
           </h2>
           <p className="max-w-xl mx-auto leading-6 text-app-muted">
-            O que você encontra quando abre o app.
+            Pensadas para gerar conexões reais.
           </p>
         </div>
         <div className="grid sm:grid-cols-2 xl:grid-cols-3 gap-6">

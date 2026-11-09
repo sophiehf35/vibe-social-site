@@ -1,4 +1,4 @@
-import { Sparkles, Mail, HelpCircle, Users, Star } from "lucide-react";
+import { Sparkles, Mail, HelpCircle, Users, Star, ChevronDown } from "lucide-react";
 
 function Subheading({ text }: { text: string }) {
   return (
@@ -58,6 +58,14 @@ export default function HeroSection() {
           </div>
 
         </div>
+        <a
+          href="#features"
+          aria-label="Ver mais conteúdo"
+          className="md:hidden absolute bottom-6 left-1/2 -translate-x-1/2 z-20 inline-flex flex-col items-center text-coral-500/80 hover:text-coral-500 transition-colors"
+        >
+          <ChevronDown className="w-6 h-6 -mb-3.5" />
+          <ChevronDown className="w-6 h-6 animate-bounce" />
+        </a>
         <div className="pointer-events-none max-[1100px]:hidden">
           <div className="absolute top-14 left-16 floating-1">
             <div className="relative inline-flex items-center gap-2 rounded-2xl border border-coral-500/30 bg-app-surface/90 px-4 py-2.5">

@@ -7,7 +7,6 @@ type Theme = "dark" | "light";
 const NAV = [
   { id: "hero", label: "Entrar" },
   { id: "features", label: "Como funciona" },
-  { id: "screens", label: "Galeria" },
   { id: "missao", label: "Missão" },
   { id: "faq", label: "Dúvidas" },
 ];

@@ -12,11 +12,11 @@ const FAQ = [
   },
   {
     q: "Como funcionam as qualidades?",
-    a: "São seis: bondosa, estilosa, divertida, inteligente, criativa e corajosa. Ao ver um post, você dá um voto numa qualidade específica. Um voto por pessoa por post, e ele substitui o anterior se você mudar de ideia. O que fica no mural do autor é a soma dos votos recebidos.",
+    a: "São seis: bondosa, estilosa, divertida, inteligente, criativa e corajosa. Ao ver um post, você dá um voto numa qualidade específica. Os votos acumulam por post. O que fica no mural do autor é a soma dos votos recebidos.",
   },
   {
-    q: "Posso enviar perguntas para qualquer pessoa?",
-    a: "Pode. Perguntas são abertas: qualquer usuário pode te mandar uma, mesmo que você não siga ele. Mas só vai pro seu perfil o que você escolher exibir.",
+    q: "Como enviar perguntas?",
+    a: "Perguntas são abertas: qualquer usuário pode te mandar uma, mesmo que você não siga ele. Mas só vai pro seu perfil o que você escolher exibir.",
   },
   {
     q: "Como envio depoimentos?",

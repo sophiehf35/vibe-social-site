@@ -24,7 +24,7 @@ export default function BenefitsGrid() {
       <div className="max-w-[72rem] mx-auto">
         <div className="mb-16 text-center">
           <h2 className="mb-4 font-bold text-app-text text-3xl md:text-4xl max-w-2xl mx-auto">
-            Um lugar onde dá <span className="text-gold-500">vontade de ficar</span>
+            Nossa missão nada <span className="text-gold-500">popular</span>
           </h2>
           <p className="max-w-xl mx-auto leading-6 text-app-muted">
             Três coisas que a gente não negocia.
