@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from "react";
-import { Heart, Sun, Moon } from "lucide-react";
+import { Sun, Moon } from "lucide-react";
+import Logo from "../Logo";
 
 type Theme = "dark" | "light";
 
@@ -91,11 +92,12 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-50 backdrop-blur-md bg-app-bg/80 border-b border-app-border">
       <div className="wrapper py-3 flex items-center justify-between gap-4">
-        <a href="/" className="flex items-center gap-2 text-app-text font-bold text-lg flex-shrink-0">
-          <span className="w-9 h-9 rounded-full bg-coral-500/15 border border-coral-500/30 flex items-center justify-center">
-            <Heart className="w-4 h-4 text-coral-500" fill="currentColor" />
-          </span>
-          Vibe Social
+        <a
+          href="/"
+          aria-label="Vibe Social — página inicial"
+          className="flex items-center flex-shrink-0"
+        >
+          <Logo className="h-8 w-auto" />
         </a>
 
         <div ref={navRef} className="hidden md:flex relative items-center rounded-full bg-app-surface/70 border border-app-border/60 p-1">
