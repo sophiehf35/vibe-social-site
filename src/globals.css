@@ -80,5 +80,13 @@ html[data-theme=light] {
 .phone-frame {
   background: #221B17;
   border: 2px solid #332A24;
-  box-shadow: 0 30px 80px -20px rgba(255,107,107,0.35), 0 20px 40px -20px rgba(0,0,0,0.8);
+  box-shadow: 0 20px 40px -20px rgba(0,0,0,0.7);
+}
+
+@utility hero-gradient-bg {
+  background-image: linear-gradient(to top,
+    rgba(255,107,107,0.7) 0%,
+    rgba(255,107,107,0.35) 15%,
+    rgba(255,107,107,0.1) 30%,
+    transparent 50%);
 }
