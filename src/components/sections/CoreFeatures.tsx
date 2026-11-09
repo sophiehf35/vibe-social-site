@@ -2,17 +2,17 @@ import { MessageSquare, HelpCircle, Star, Users, Sparkles, Cake } from "lucide-r
 
 const FEATURES = [
   { icon: MessageSquare, title: "Depoimentos",
-    description: "Só amigos mútuos escrevem sobre você. Cada depoimento passa pela sua aprovação antes de ir ao ar — e editar um já publicado volta pra fila. Você apaga quando quiser." },
+    description: "Um espaço pra quem te conhece dizer o que você significa. Só fica no seu perfil o que você quiser. Se mudar de ideia, apaga." },
   { icon: HelpCircle, title: "Perguntas",
-    description: "Caixinha de perguntas abertas ou anônimas pra sua rede, com filtro de quem pode responder. Sem caixinha de ódio: moderação local roda antes do envio." },
+    description: "Qualquer pessoa pode te perguntar. Mas só aparece no seu perfil o que você escolher mostrar. Curiosidade sim, exposição não." },
   { icon: Star, title: "Votos",
-    description: "Reconheça virtudes em quem convive com você: bondosa, criativa, inteligente, corajosa. 1 voto por pessoa por post — e o que fica no perfil são as virtudes recebidas." },
+    description: "Suas qualidades ganham número no mural. Estiloso, divertido, criativo, bondoso: cada pessoa que reconhece soma ali." },
   { icon: Users, title: "Clubes",
-    description: "Grupos por interesse, sem algoritmo empurrando. Entre nos clubes que fazem sentido pra você e converse com quem está na mesma vibe — de verdade." },
+    description: "Encontrar a sua turma fica fácil quando o assunto é o que te move. Clubes por interesse, com gente ali pelo mesmo motivo." },
   { icon: Sparkles, title: "Vibes",
-    description: "148 interesses permanentes que definem você. Sem hashtag que trending e esquece. Vibe que você escolhe hoje continua pesando daqui a um ano." },
+    description: "As coisas que combinam com você aparecem onde você aparece. Quem bate o olho num post já sabe o que você gosta." },
   { icon: Cake, title: "Aniversários",
-    description: "O dia de quem importa aparece pra você, na hora certa. Sem depender de algoritmo lembrando. Um parabéns que chega quando deve chegar." },
+    description: "As datas de quem importa ficam sempre à vista. Você vê quem tá chegando e chega na hora certa, sem depender da rede." },
 ];
 
 export default function CoreFeatures() {
@@ -23,7 +23,9 @@ export default function CoreFeatures() {
           <h2 className="mb-4 font-bold text-app-text text-3xl md:text-4xl max-w-2xl mx-auto">
             Seis jeitos de estar na <span className="text-coral-500">vibe</span>
           </h2>
-          <p className="max-w-xl mx-auto leading-6 text-app-muted">Funcionalidades pensadas pra você se conectar sem o peso das redes de sempre.</p>
+          <p className="max-w-xl mx-auto leading-6 text-app-muted">
+            O que você encontra quando abre o app.
+          </p>
         </div>
         <div className="grid sm:grid-cols-2 xl:grid-cols-3 gap-6">
           {FEATURES.map((f) => {
@@ -32,7 +34,7 @@ export default function CoreFeatures() {
               <div key={f.title} className="bg-app-surface p-8 border border-app-border rounded-[20px] hover:border-coral-500/40 transition">
                 <div className="core-feature-icon mb-6"><Icon className="w-7 h-7 text-coral-500" /></div>
                 <h3 className="mb-3 text-app-text font-bold text-xl">{f.title}</h3>
-                <p className="text-app-muted text-sm leading-relaxed">{f.description}</p>
+                <p className="text-app-muted text-sm leading-relaxed line-clamp-4 min-h-[91px]">{f.description}</p>
               </div>
             );
           })}

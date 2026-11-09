@@ -90,3 +90,11 @@ html[data-theme=light] {
     rgba(255,107,107,0.1) 30%,
     transparent 50%);
 }
+
+@utility hero-gradient-bg {
+  background-image: linear-gradient(to top,
+    rgba(255,107,107,0.7) 0%,
+    rgba(255,107,107,0.35) 15%,
+    rgba(255,107,107,0.1) 30%,
+    transparent 50%);
+}

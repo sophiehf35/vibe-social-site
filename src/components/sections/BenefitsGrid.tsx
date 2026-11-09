@@ -1,15 +1,15 @@
-import { ShieldCheck, Fingerprint, Accessibility } from "lucide-react";
+import { ShieldCheck, Bot, Headphones } from "lucide-react";
 
 const PILLARS = [
   { num: "01", icon: ShieldCheck, accent: "coral" as const,
     title: "Combate ao ódio",
-    description: "Moderação de texto roda no seu aparelho, offline. O que é tóxico nunca sai do celular. Bloqueio e silenciamento afetam feed, chat e notificação em toda a rede — sem exceção." },
-  { num: "02", icon: Fingerprint, accent: "gold" as const,
+    description: "Reclamar do chefe, do time, do dia ruim? Tudo bem, é humano. Xingar, ameaçar ou atacar alguém? Não publica. A diferença entre desabafo e ataque é clara, e a gente não finge que não vê." },
+  { num: "02", icon: Bot, accent: "gold" as const,
     title: "Política anti-bot",
-    description: "Verificação de identidade na entrada, sem SDK de tracking. Conta nova passa por triagem. Sem enxame de perfis falsos inflando número, sem engajamento comprado." },
-  { num: "03", icon: Accessibility, accent: "green" as const,
+    description: "Automação não se finge de gente aqui. Script que curte em massa, conta que posta no piloto automático, engajamento comprado: nada disso passa pela entrada. O que você vê é comportamento de gente." },
+  { num: "03", icon: Headphones, accent: "green" as const,
     title: "Suporte acessível",
-    description: "Alto contraste, navegação por teclado, leitor de tela. Canal de suporte humano, com resposta. Acessibilidade não é feature opcional — é padrão." },
+    description: "Ticket com resposta de verdade, pra todo mundo. Chat direto com o time, pra quem assina. Nada de robô te empurrando pra uma FAQ que não responde." },
 ];
 
 const ACCENTS = {
@@ -24,9 +24,11 @@ export default function BenefitsGrid() {
       <div className="max-w-[72rem] mx-auto">
         <div className="mb-16 text-center">
           <h2 className="mb-4 font-bold text-app-text text-3xl md:text-4xl max-w-2xl mx-auto">
-            Três coisas que a gente levou <span className="text-gold-500">a sério</span>
+            Um lugar onde dá <span className="text-gold-500">vontade de ficar</span>
           </h2>
-          <p className="max-w-xl mx-auto leading-6 text-app-muted">Não é o que a rede te dá. É o que a rede te devolve.</p>
+          <p className="max-w-xl mx-auto leading-6 text-app-muted">
+            Três coisas que a gente não negocia.
+          </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
           {PILLARS.map((p) => {

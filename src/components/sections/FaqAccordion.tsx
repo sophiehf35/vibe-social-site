@@ -4,27 +4,27 @@ import { Plus, Minus } from "lucide-react";
 const FAQ = [
   {
     q: "O que é Vibe Social?",
-    a: "Uma rede social mobile onde, além de curtir posts, você reconhece virtudes em quem convive com você. Vibes são interesses permanentes e depoimentos só podem ser deixados por amigos mútuos, com aprovação do alvo.",
+    a: "Uma rede social pensada pra combater todo tipo de ódio e valorizar as qualidades de cada pessoa. Seu mural mostra as qualidades que os outros reconhecem em você, as suas vibes e os clubes que você frequenta. Um lugar onde dá vontade de estar.",
   },
   {
-    q: "Como funcionam as virtudes?",
-    a: "Existem 6 virtudes: bondosa, estilosa, divertida, inteligente, criativa e corajosa. Ao ver um post, você pode dar um voto numa virtude específica. Só um voto por pessoa por post, e o voto substitui o anterior se você mudar de ideia. O que fica no perfil do autor é a soma dos votos recebidos.",
+    q: "O que exibe no meu mural?",
+    a: "As qualidades que as pessoas reconhecem em você, com o número de votos de cada uma. Também ficam ali as suas vibes e os clubes que você frequenta. É o seu retrato dentro da rede.",
   },
   {
-    q: "E as curtidas?",
-    a: "Curtida existe também. É o jeito rápido de dizer que gostou do post. Mas o que diferencia o Vibe é que o perfil do autor agrega virtudes recebidas, não só curtidas. As duas coisas convivem.",
+    q: "Como funcionam as qualidades?",
+    a: "São seis: bondosa, estilosa, divertida, inteligente, criativa e corajosa. Ao ver um post, você dá um voto numa qualidade específica. Um voto por pessoa por post, e ele substitui o anterior se você mudar de ideia. O que fica no mural do autor é a soma dos votos recebidos.",
   },
   {
-    q: "Como funcionam os depoimentos?",
-    a: "Só amigos mútuos podem escrever. E cada depoimento passa pela sua aprovação antes de ficar visível. Editar um publicado volta pra fila. Você exclui quando quiser.",
+    q: "Posso enviar perguntas para qualquer pessoa?",
+    a: "Pode. Perguntas são abertas: qualquer usuário pode te mandar uma, mesmo que você não siga ele. Mas só vai pro seu perfil o que você escolher exibir.",
   },
   {
-    q: "Quando lança na Play Store?",
-    a: "Estamos finalizando os testes. Entre na lista de espera pra ser avisada no dia do lançamento.",
+    q: "Como envio depoimentos?",
+    a: "Só entre amigos. Você manda pra quem você tem amizade, e a pessoa decide se quer exibir no mural dela. Ela pode apagar quando quiser.",
   },
   {
-    q: "Meus dados ficam onde?",
-    a: "No seu aparelho, principalmente. O servidor guarda o mínimo pra sincronizar. Moderação de texto roda localmente — conteúdo bloqueado não sai do celular. Sem SDK de tracking de terceiros.",
+    q: "Posso criar clubes?",
+    a: "Pode. Qualquer pessoa pode criar um clube sobre o que te move e convidar gente com o mesmo interesse. Você cuida do espaço, define as regras e recebe quem quer entrar.",
   },
 ];
 
@@ -43,16 +43,10 @@ export default function FaqAccordion() {
           {FAQ.map((item, i) => {
             const isActive = active === i;
             return (
-              <div
-                key={item.q}
-                className={`bg-app-surface border rounded-2xl transition ${isActive ? "border-coral-500/40" : "border-app-border hover:border-app-border/80"}`}
-              >
-                <button
-                  type="button"
-                  onClick={() => setActive(isActive ? null : i)}
-                  className="flex items-center justify-between w-full text-left px-6 py-5"
-                  aria-expanded={isActive}
-                >
+              <div key={item.q}
+                className={`bg-app-surface border rounded-2xl transition ${isActive ? "border-coral-500/40" : "border-app-border hover:border-app-border/80"}`}>
+                <button type="button" onClick={() => setActive(isActive ? null : i)}
+                  className="flex items-center justify-between w-full text-left px-6 py-5" aria-expanded={isActive}>
                   <span className="text-app-text font-medium pr-4">{item.q}</span>
                   <span className={`flex-shrink-0 w-7 h-7 rounded-full flex items-center justify-center transition ${isActive ? "bg-coral-500 text-white" : "bg-app-soft text-app-muted"}`}>
                     {isActive ? <Minus className="w-3.5 h-3.5" /> : <Plus className="w-3.5 h-3.5" />}

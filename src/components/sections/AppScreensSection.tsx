@@ -4,9 +4,9 @@ import { ChevronLeft, ChevronRight, X } from "lucide-react";
 interface Screen { id: string; caption: string; src?: string; }
 
 const SCREENS: Screen[] = [
-  { id: "feed", caption: "Feed" }, { id: "depoimentos", caption: "Depoimentos" },
-  { id: "perguntas", caption: "Perguntas" }, { id: "clubes", caption: "Clubes" },
-  { id: "votos", caption: "Votos" }, { id: "perfil", caption: "Perfil" },
+  { id: "depoimentos", caption: "Depoimentos" }, { id: "perguntas", caption: "Perguntas" },
+  { id: "votos", caption: "Votos" }, { id: "clubes", caption: "Clubes" },
+  { id: "vibes", caption: "Vibes" }, { id: "aniversarios", caption: "Aniversários" },
 ];
 const PHONE_W = 280, GAP = 16, STEP = PHONE_W + GAP, WRAP = 6 * STEP;
 
@@ -63,7 +63,9 @@ export default function AppScreensSection() {
           <h2 className="mb-3 font-bold text-app-text text-3xl md:text-4xl max-w-2xl mx-auto">
             Cada tela, um jeito de <span className="text-coral-500">se conectar</span>
           </h2>
-          <p className="max-w-xl mx-auto leading-6 text-app-muted">Do feed aos depoimentos, tudo pensado pra você estar entre pessoas na mesma vibe.</p>
+          <p className="max-w-xl mx-auto leading-6 text-app-muted">
+            Do feed aos aniversários, tudo pra você estar entre gente na mesma vibe.
+          </p>
         </div>
         <style>{`
           .screens-scroller::-webkit-scrollbar { display: none; }
