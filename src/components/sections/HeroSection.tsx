@@ -32,14 +32,14 @@ export default function HeroSection() {
             <div className="text-center pb-0 md:pb-16">
               <Subheading text="Sua rede. Suas vibes." />
               <h1 className="text-app-text mx-auto font-bold mb-4 text-4xl sm:text-[50px] sm:leading-[64px] max-w-[740px]">
-                Conexões reais com <span className="text-coral-500">pessoas que estão na mesma vibe</span>
+                Encontre pessoas que estão na mesma vibe.
               </h1>
               <p className="max-w-[580px] text-center mx-auto text-app-muted text-base">
-                Um lugar onde a afinidade aproxima, o respeito sustenta e o cuidado diário mantém o ambiente saudável, combatendo todo tipo de ódio.
+                Um lugar onde a afinidade aproxima, o respeito une e a rede cuida constantemente para que o ódio não encontre espaço.
               </p>
               <div className="mt-9 flex relative z-30 items-center justify-center">
                 <a
-                  href="https://whatsapp.com/channel/PLACEHOLDER"
+                  href="https://whatsapp.com/channel/0029VaEeaW342DcnJNTByj0U"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hero-btn-pulse inline-flex items-center gap-3 md:gap-5 rounded-2xl border border-coral-500/70 bg-coral-500/20 pl-2.5 md:pl-3.5 pr-5 md:pr-[30px] py-2.5 md:py-3.5 text-app-text transition-colors hover:border-coral-500/40 hover:bg-coral-500/[0.12] max-w-[calc(100vw-40px)]"
