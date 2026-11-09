@@ -36,7 +36,7 @@ export default function FaqAccordion() {
         <div className="mb-12 text-center">
           <h2 className="mb-3 font-bold text-app-text text-3xl md:text-4xl">Dúvidas frequentes</h2>
           <p className="max-w-md mx-auto leading-6 text-app-muted">
-            Se a sua não estiver aqui, é porque a gente ainda não pensou nela.
+            Confira algumas perguntas e respostas sobre a rede social.
           </p>
         </div>
         <div className="space-y-2">

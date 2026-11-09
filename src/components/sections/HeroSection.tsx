@@ -32,10 +32,10 @@ export default function HeroSection() {
             <div className="text-center pb-0 md:pb-16">
               <Subheading text="Sua rede. Suas vibes." />
               <h1 className="text-app-text mx-auto font-bold mb-4 text-4xl sm:text-[50px] sm:leading-[64px] max-w-[740px]">
-                Encontre pessoas que estão na mesma vibe.
+                Encontre pessoas que estão na mesma vibe
               </h1>
               <p className="max-w-[580px] text-center mx-auto text-app-muted text-base">
-                Um lugar onde a afinidade aproxima, o respeito une e a rede cuida constantemente para que o ódio não encontre espaço.
+                Um lugar onde a afinidade aproxima, o respeito une e a rede cuida constantemente para que o ódio não encontre espaço
               </p>
               <div className="mt-9 flex relative z-30 items-center justify-center">
                 <a
