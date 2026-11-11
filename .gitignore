@@ -6,3 +6,11 @@ dist/
 .env.*
 !.env.example
 .pnpm-store/
+
+# releases/ — staging local dos binários publicados em GH Release.
+# Binários ficam fora do git (vão pro GitHub Release, não pro repo).
+# Só os READMEs de cada release são versionados.
+releases/**/*.tflite
+releases/**/*.bin
+releases/**/*.onnx
+releases/**/*.h5
